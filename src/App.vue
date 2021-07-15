@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Loader v-if="this.albums.length === 0" />
     <Header />
     <Main :albums="albums" />
   </div>
@@ -7,12 +8,14 @@
 
 <script>
 import axios from 'axios'
+import Loader from './components/Loader.vue'
 import Header from './components/Header.vue'
 import Main from './components/Main.vue'
 
 export default {
   name: 'App',
   components: {
+    Loader,
     Header,
     Main
   },
