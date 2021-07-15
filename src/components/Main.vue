@@ -1,8 +1,8 @@
 <template>
   <main>
     <div class="container">
-        <div class="row">
-            <Album class="col-6" v-for="(album, index) in albums" :key="index"
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 justify-content-center">
+            <Album class="col d-flex" v-for="(album, index) in albums" :key="index"
                 :cover="album.poster"
                 :title="album.title"
                 :artist="album.author"
@@ -28,5 +28,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+main {
+    padding: 48px 0;
+}
 </style>
