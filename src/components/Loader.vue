@@ -12,11 +12,13 @@ export default {
 
 <style scoped lang="scss">
 .loader-container {
+    position: fixed;
     height: 100vh;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgba(0, 0, 0, .3);
 
     .lds-ring {
         display: inline-block;

@@ -5,3 +5,18 @@ body {
     background-color: $bg-primary;
     font-family: 'Roboto', sans-serif;
 }
+
+.alert-container {
+    position: fixed;
+    top: 80px;
+    width: 100vw;
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .alert {
+        color: $title-color;
+        font-size: 28px;
+    }
+}
